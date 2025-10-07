@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Profile Card</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f8f9fc;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      padding: 40px 20px;
+    }
+
+    .card {
+      max-width: 600px;
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin: auto;
+      display: flex;
+      gap: 20px;
+      padding: 24px;
+      align-items: flex-start;
+    }
+
+    .card img {
+      width: 140px;
+      height: 140px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .info {
+      flex: 1;
+    }
+
+    .info p {
+      font-size: 1rem;
+      color: #333;
+      margin-bottom: 16px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      background-color: #0d6efd;
+      color: white;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      transition: background 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: #084298;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: auto;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 640px) {
+      .card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .card img {
+        width: 120px;
+        height: 120px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .buttons a {
+        width: 90%;
+        margin: auto;
+      }
+
+      .name {
+        margin-top: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/150" alt="Profile Image">
+    
+    <div class="info">
+      <p>
+        Web Designer & JavaScript Enthusiast.<br>
+        Loves clean, creative layouts and good coffee!
+      </p>
+
+      <div class="buttons">
+        <a href="#">Contact</a>
+        <a href="#">Portfolio</a>
+      </div>
+
+      <div class="name">Namit Sangoi</div>
+    </div>
+  </div>
